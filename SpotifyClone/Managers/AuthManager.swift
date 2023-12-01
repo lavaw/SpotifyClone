@@ -11,8 +11,6 @@ final class AuthManager {
     static let shared = AuthManager()
     
     struct Constants {
-        static let clientID = "1676bc5bcd824659b8f77c09b4126f97"
-        static let clientSecret = "fc35b1f9e44246b5afa3c80956ddafc6"
         static let tokenAPIUrl = "https://accounts.spotify.com/api/token"
         static let redirectURI = "https://www.iosacademy.io"
         static let scopes = "user-read-private%20playlist-modify-public%20playlist-read-private%20playlist-modify-private%20user-follow-read%20user-library-modify%20user-library-read%20user-read-email"
@@ -20,9 +18,10 @@ final class AuthManager {
     
     private init() {}
     
+    
     public var signInUrl: URL? {
         let base = "https://accounts.spotify.com/authorize"
-        let string = "\(base)?response_type=code&client_id=\(Constants.clientID)&scope=\(Constants.scopes)&redirect_uri=\(Constants.redirectURI)&show_dialog=TRUE"
+        let string = "\(base)?response_type=code&client_id=\(PrivateTokensForAPI.clientID)&scope=\(Constants.scopes)&redirect_uri=\(Constants.redirectURI)&show_dialog=TRUE"
         
         return URL(string: string)
     
@@ -74,7 +73,7 @@ final class AuthManager {
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpBody = components.query?.data(using: .utf8)
         
-        let basicToken = Constants.clientID+":"+Constants.clientSecret
+        let basicToken = PrivateTokensForAPI.clientID+":"+PrivateTokensForAPI.clientSecret
         let data = basicToken.data(using: .utf8)
         guard let base64String = data?.base64EncodedString() else {
             print("Fail base64")
@@ -130,7 +129,7 @@ final class AuthManager {
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpBody = components.query?.data(using: .utf8)
         
-        let basicToken = Constants.clientID+":"+Constants.clientSecret
+        let basicToken = PrivateTokensForAPI.clientID+":"+PrivateTokensForAPI.clientSecret
         let data = basicToken.data(using: .utf8)
         guard let base64String = data?.base64EncodedString() else {
             print("Fail base64")
