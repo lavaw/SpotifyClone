@@ -30,6 +30,7 @@
 		EEE4E0062B17577700946D22 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E0052B17577700946D22 /* Artist.swift */; };
 		EEE4E0082B17578300946D22 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E0072B17578300946D22 /* UserProfile.swift */; };
 		EEE4E00A2B17751E00946D22 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E0092B17751E00946D22 /* Extension.swift */; };
+		EEE4E00C2B195B4000946D22 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E00B2B195B4000946D22 /* AuthResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		EEE4E0052B17577700946D22 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		EEE4E0072B17578300946D22 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		EEE4E0092B17751E00946D22 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EEE4E00B2B195B4000946D22 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				EEE4E0032B17575600946D22 /* AudioTrack.swift */,
 				EEE4E0052B17577700946D22 /* Artist.swift */,
 				EEE4E0072B17578300946D22 /* UserProfile.swift */,
+				EEE4E00B2B195B4000946D22 /* AuthResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				EEE4DFF42B1756C400946D22 /* ProfileViewController.swift in Sources */,
 				EEE4DFE52B17561000946D22 /* TabBarViewController.swift in Sources */,
 				EEE4DFCF2B17533300946D22 /* HomeViewController.swift in Sources */,
+				EEE4E00C2B195B4000946D22 /* AuthResponse.swift in Sources */,
 				EEE4E0002B17572D00946D22 /* HapticsManager.swift in Sources */,
 				EEE4E00A2B17751E00946D22 /* Extension.swift in Sources */,
 				EEE4DFEE2B17569400946D22 /* AuthViewController.swift in Sources */,
