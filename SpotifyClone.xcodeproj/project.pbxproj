@@ -31,7 +31,7 @@
 		EEE4E0082B17578300946D22 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E0072B17578300946D22 /* UserProfile.swift */; };
 		EEE4E00A2B17751E00946D22 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E0092B17751E00946D22 /* Extension.swift */; };
 		EEE4E00C2B195B4000946D22 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E00B2B195B4000946D22 /* AuthResponse.swift */; };
-		EEE4E00E2B19641500946D22 /* PrivateTokensForAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E00D2B19641500946D22 /* PrivateTokensForAPI.swift */; };
+		EEE4E0102B19699100946D22 /* PrivateTokensForAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E00F2B19699100946D22 /* PrivateTokensForAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +61,7 @@
 		EEE4E0072B17578300946D22 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		EEE4E0092B17751E00946D22 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		EEE4E00B2B195B4000946D22 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
-		EEE4E00D2B19641500946D22 /* PrivateTokensForAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateTokensForAPI.swift; sourceTree = "<group>"; };
+		EEE4E00F2B19699100946D22 /* PrivateTokensForAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateTokensForAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +140,7 @@
 				EEE4DFFB2B17570E00946D22 /* AuthManager.swift */,
 				EEE4DFFD2B17571B00946D22 /* APICaller.swift */,
 				EEE4DFFF2B17572D00946D22 /* HapticsManager.swift */,
-				EEE4E00D2B19641500946D22 /* PrivateTokensForAPI.swift */,
+				EEE4E00F2B19699100946D22 /* PrivateTokensForAPI.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 				EEE4DFE72B17563E00946D22 /* SearchViewController.swift in Sources */,
 				EEE4E0022B17574A00946D22 /* Playlist.swift in Sources */,
 				EEE4DFFC2B17570E00946D22 /* AuthManager.swift in Sources */,
-				EEE4E00E2B19641500946D22 /* PrivateTokensForAPI.swift in Sources */,
+				EEE4E0102B19699100946D22 /* PrivateTokensForAPI.swift in Sources */,
 				EEE4DFF02B1756A600946D22 /* WelcomeViewController.swift in Sources */,
 				EEE4DFF42B1756C400946D22 /* ProfileViewController.swift in Sources */,
 				EEE4DFE52B17561000946D22 /* TabBarViewController.swift in Sources */,
