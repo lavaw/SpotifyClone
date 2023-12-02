@@ -3,4 +3,54 @@
    uuid = "ECBA587E-4DD6-472D-BC1C-25197EF7371E"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "777A8439-B0EE-4C92-A92E-86D30A3DD869"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpotifyClone/Managers/APICaller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getCurrentUserProfile(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "777A8439-B0EE-4C92-A92E-86D30A3DD869 - 8977f2954469394b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpotifyClone.APICaller.getCurrentUserProfile(completion: (Swift.Result&lt;SpotifyClone.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SpotifyClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rudolfamiran/Desktop/SpotifyClone/SpotifyClone/Managers/APICaller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "777A8439-B0EE-4C92-A92E-86D30A3DD869 - 2a3e934321ffe23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.URLRequest) -&gt; () in SpotifyClone.APICaller.getCurrentUserProfile(completion: (Swift.Result&lt;SpotifyClone.UserProfile, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SpotifyClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rudolfamiran/Desktop/SpotifyClone/SpotifyClone/Managers/APICaller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

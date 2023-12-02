@@ -21,7 +21,7 @@ final class APICaller {
     }
     
     public func getCurrentUserProfile(completion: @escaping (Result<UserProfile, Error>) -> Void) {
-        createRequest(with: URL(string: Constants.baseAPIURL + "/me"), type: .GET) { baseRequest in
+        createRequest(with: URL(string: Constants.baseAPIURL + "/users"), type: .GET) { baseRequest in
             let task = URLSession.shared.dataTask(with: baseRequest) { data, _, error in
                 guard let data = data, error == nil else {
                     completion(.failure(APIError.faileedToGetData))
