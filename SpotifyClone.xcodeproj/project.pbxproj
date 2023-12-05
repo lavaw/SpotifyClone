@@ -13,6 +13,7 @@
 		EED9D0892B1B660A0037AA48 /* APIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9D0882B1B660A0037AA48 /* APIImage.swift */; };
 		EED9D08B2B1B69380037AA48 /* FeaturedPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9D08A2B1B69380037AA48 /* FeaturedPlaylistsResponse.swift */; };
 		EED9D08D2B1B6D950037AA48 /* RecommendedGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9D08C2B1B6D950037AA48 /* RecommendedGenres.swift */; };
+		EED9D08F2B1F3C950037AA48 /* RecomendationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9D08E2B1F3C950037AA48 /* RecomendationsResponse.swift */; };
 		EEE4DFCB2B17533300946D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DFCA2B17533300946D22 /* AppDelegate.swift */; };
 		EEE4DFCD2B17533300946D22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DFCC2B17533300946D22 /* SceneDelegate.swift */; };
 		EEE4DFCF2B17533300946D22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DFCE2B17533300946D22 /* HomeViewController.swift */; };
@@ -49,6 +50,7 @@
 		EED9D0882B1B660A0037AA48 /* APIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImage.swift; sourceTree = "<group>"; };
 		EED9D08A2B1B69380037AA48 /* FeaturedPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistsResponse.swift; sourceTree = "<group>"; };
 		EED9D08C2B1B6D950037AA48 /* RecommendedGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGenres.swift; sourceTree = "<group>"; };
+		EED9D08E2B1F3C950037AA48 /* RecomendationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationsResponse.swift; sourceTree = "<group>"; };
 		EEE4DFC72B17533300946D22 /* SpotifyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE4DFCA2B17533300946D22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE4DFCC2B17533300946D22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				EED9D0882B1B660A0037AA48 /* APIImage.swift */,
 				EED9D08A2B1B69380037AA48 /* FeaturedPlaylistsResponse.swift */,
 				EED9D08C2B1B6D950037AA48 /* RecommendedGenres.swift */,
+				EED9D08E2B1F3C950037AA48 /* RecomendationsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				EE76ED6D2B1A07BA004078C5 /* SettingsModels.swift in Sources */,
 				EEE4E0102B19699100946D22 /* PrivateTokensForAPI.swift in Sources */,
 				EED9D0892B1B660A0037AA48 /* APIImage.swift in Sources */,
+				EED9D08F2B1F3C950037AA48 /* RecomendationsResponse.swift in Sources */,
 				EEE4DFF02B1756A600946D22 /* WelcomeViewController.swift in Sources */,
 				EED9D0872B1B64F40037AA48 /* NewReleasesResponse.swift in Sources */,
 				EED9D08D2B1B6D950037AA48 /* RecommendedGenres.swift in Sources */,
