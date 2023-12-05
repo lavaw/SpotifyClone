@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 16.0, *)
 class WelcomeViewController: UIViewController {
 
     private let signInButton: UIButton = {

@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 16.0, *)
 class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
@@ -42,6 +43,8 @@ class TabBarViewController: UITabBarController {
         
         setViewControllers([nav1, nav2, nav3], animated: false)
         
+        tabBar.isTranslucent = false
+        tabBar.barTintColor = .clear
         
         
     }
