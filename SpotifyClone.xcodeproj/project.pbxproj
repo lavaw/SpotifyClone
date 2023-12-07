@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B6B19BF1AECA97750BC00F56 /* Pods_SpotifyClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A24E6C3F4BA2B470379761 /* Pods_SpotifyClone.framework */; };
+		EE2222FF2B21E71F0064CE53 /* NewReleasesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2222FE2B21E71F0064CE53 /* NewReleasesCellViewModel.swift */; };
 		EE76ED6D2B1A07BA004078C5 /* SettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76ED6C2B1A07BA004078C5 /* SettingsModels.swift */; };
 		EED9D0872B1B64F40037AA48 /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9D0862B1B64F40037AA48 /* NewReleasesResponse.swift */; };
 		EED9D0892B1B660A0037AA48 /* APIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9D0882B1B660A0037AA48 /* APIImage.swift */; };
@@ -48,6 +49,7 @@
 		0AC5E1659C185C0E6720FF8F /* Pods-SpotifyClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyClone.release.xcconfig"; path = "Target Support Files/Pods-SpotifyClone/Pods-SpotifyClone.release.xcconfig"; sourceTree = "<group>"; };
 		49A24E6C3F4BA2B470379761 /* Pods_SpotifyClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADC2A4A0C2E337127ABC52 /* Pods-SpotifyClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyClone.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyClone/Pods-SpotifyClone.debug.xcconfig"; sourceTree = "<group>"; };
+		EE2222FE2B21E71F0064CE53 /* NewReleasesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesCellViewModel.swift; sourceTree = "<group>"; };
 		EE76ED6C2B1A07BA004078C5 /* SettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModels.swift; sourceTree = "<group>"; };
 		EED9D0862B1B64F40037AA48 /* NewReleasesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesResponse.swift; sourceTree = "<group>"; };
 		EED9D0882B1B660A0037AA48 /* APIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImage.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 		EEE4DFE32B17539600946D22 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EE2222FE2B21E71F0064CE53 /* NewReleasesCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2222FF2B21E71F0064CE53 /* NewReleasesCellViewModel.swift in Sources */,
 				EEE4E0042B17575600946D22 /* AudioTrack.swift in Sources */,
 				EED9D0922B1F639D0037AA48 /* NewReleaseCollectionViewCell.swift in Sources */,
 				EED9D0962B1F63F50037AA48 /* RecommendedTrackCollectionViewCell.swift in Sources */,
