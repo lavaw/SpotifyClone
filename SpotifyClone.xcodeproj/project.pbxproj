@@ -10,6 +10,8 @@
 		B6B19BF1AECA97750BC00F56 /* Pods_SpotifyClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A24E6C3F4BA2B470379761 /* Pods_SpotifyClone.framework */; };
 		EE2222FF2B21E71F0064CE53 /* NewReleasesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2222FE2B21E71F0064CE53 /* NewReleasesCellViewModel.swift */; };
 		EE76ED6D2B1A07BA004078C5 /* SettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76ED6C2B1A07BA004078C5 /* SettingsModels.swift */; };
+		EE8405F92B23D90F008A4E33 /* FeaturedPlaylistCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8405F82B23D90F008A4E33 /* FeaturedPlaylistCellViewModel.swift */; };
+		EE8405FB2B23D95A008A4E33 /* RecommndedTrackListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8405FA2B23D95A008A4E33 /* RecommndedTrackListCellViewModel.swift */; };
 		EED9D0872B1B64F40037AA48 /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9D0862B1B64F40037AA48 /* NewReleasesResponse.swift */; };
 		EED9D0892B1B660A0037AA48 /* APIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9D0882B1B660A0037AA48 /* APIImage.swift */; };
 		EED9D08B2B1B69380037AA48 /* FeaturedPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED9D08A2B1B69380037AA48 /* FeaturedPlaylistsResponse.swift */; };
@@ -51,6 +53,8 @@
 		7DADC2A4A0C2E337127ABC52 /* Pods-SpotifyClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyClone.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyClone/Pods-SpotifyClone.debug.xcconfig"; sourceTree = "<group>"; };
 		EE2222FE2B21E71F0064CE53 /* NewReleasesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesCellViewModel.swift; sourceTree = "<group>"; };
 		EE76ED6C2B1A07BA004078C5 /* SettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModels.swift; sourceTree = "<group>"; };
+		EE8405F82B23D90F008A4E33 /* FeaturedPlaylistCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistCellViewModel.swift; sourceTree = "<group>"; };
+		EE8405FA2B23D95A008A4E33 /* RecommndedTrackListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommndedTrackListCellViewModel.swift; sourceTree = "<group>"; };
 		EED9D0862B1B64F40037AA48 /* NewReleasesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesResponse.swift; sourceTree = "<group>"; };
 		EED9D0882B1B660A0037AA48 /* APIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImage.swift; sourceTree = "<group>"; };
 		EED9D08A2B1B69380037AA48 /* FeaturedPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistsResponse.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				EE2222FE2B21E71F0064CE53 /* NewReleasesCellViewModel.swift */,
+				EE8405F82B23D90F008A4E33 /* FeaturedPlaylistCellViewModel.swift */,
+				EE8405FA2B23D95A008A4E33 /* RecommndedTrackListCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -368,6 +374,7 @@
 				EEE4E0042B17575600946D22 /* AudioTrack.swift in Sources */,
 				EED9D0922B1F639D0037AA48 /* NewReleaseCollectionViewCell.swift in Sources */,
 				EED9D0962B1F63F50037AA48 /* RecommendedTrackCollectionViewCell.swift in Sources */,
+				EE8405F92B23D90F008A4E33 /* FeaturedPlaylistCellViewModel.swift in Sources */,
 				EEE4DFE72B17563E00946D22 /* SearchViewController.swift in Sources */,
 				EEE4E0022B17574A00946D22 /* Playlist.swift in Sources */,
 				EEE4DFFC2B17570E00946D22 /* AuthManager.swift in Sources */,
@@ -394,6 +401,7 @@
 				EEE4DFCD2B17533300946D22 /* SceneDelegate.swift in Sources */,
 				EED9D08B2B1B69380037AA48 /* FeaturedPlaylistsResponse.swift in Sources */,
 				EEE4DFF62B1756D000946D22 /* PlayerViewController.swift in Sources */,
+				EE8405FB2B23D95A008A4E33 /* RecommndedTrackListCellViewModel.swift in Sources */,
 				EEE4DFFA2B1756F100946D22 /* SearchResultViewController.swift in Sources */,
 				EEE4DFFE2B17571B00946D22 /* APICaller.swift in Sources */,
 				EEE4DFF22B1756B700946D22 /* SettingsViewController.swift in Sources */,
