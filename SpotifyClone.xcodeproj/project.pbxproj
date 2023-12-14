@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B6B19BF1AECA97750BC00F56 /* Pods_SpotifyClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A24E6C3F4BA2B470379761 /* Pods_SpotifyClone.framework */; };
+		EE0E4A592B2A6EBC0016804A /* PlaylistHeadeCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E4A582B2A6EBC0016804A /* PlaylistHeadeCollectionReusableView.swift */; };
+		EE0E4A5B2B2A73280016804A /* PlaylistHeaderViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E4A5A2B2A73280016804A /* PlaylistHeaderViewViewModel.swift */; };
 		EE2222FF2B21E71F0064CE53 /* NewReleasesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2222FE2B21E71F0064CE53 /* NewReleasesCellViewModel.swift */; };
 		EE76ED6D2B1A07BA004078C5 /* SettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76ED6C2B1A07BA004078C5 /* SettingsModels.swift */; };
 		EE8405F92B23D90F008A4E33 /* FeaturedPlaylistCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8405F82B23D90F008A4E33 /* FeaturedPlaylistCellViewModel.swift */; };
@@ -54,6 +56,8 @@
 		0AC5E1659C185C0E6720FF8F /* Pods-SpotifyClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyClone.release.xcconfig"; path = "Target Support Files/Pods-SpotifyClone/Pods-SpotifyClone.release.xcconfig"; sourceTree = "<group>"; };
 		49A24E6C3F4BA2B470379761 /* Pods_SpotifyClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DADC2A4A0C2E337127ABC52 /* Pods-SpotifyClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyClone.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyClone/Pods-SpotifyClone.debug.xcconfig"; sourceTree = "<group>"; };
+		EE0E4A582B2A6EBC0016804A /* PlaylistHeadeCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeadeCollectionReusableView.swift; sourceTree = "<group>"; };
+		EE0E4A5A2B2A73280016804A /* PlaylistHeaderViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderViewViewModel.swift; sourceTree = "<group>"; };
 		EE2222FE2B21E71F0064CE53 /* NewReleasesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesCellViewModel.swift; sourceTree = "<group>"; };
 		EE76ED6C2B1A07BA004078C5 /* SettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModels.swift; sourceTree = "<group>"; };
 		EE8405F82B23D90F008A4E33 /* FeaturedPlaylistCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistCellViewModel.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 			children = (
 				EED9D0902B1F63790037AA48 /* Browse */,
 				EEE4DFD52B17533500946D22 /* LaunchScreen.storyboard */,
+				EE0E4A582B2A6EBC0016804A /* PlaylistHeadeCollectionReusableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				EE2222FE2B21E71F0064CE53 /* NewReleasesCellViewModel.swift */,
 				EE8405F82B23D90F008A4E33 /* FeaturedPlaylistCellViewModel.swift */,
 				EE8405FA2B23D95A008A4E33 /* RecommndedTrackListCellViewModel.swift */,
+				EE0E4A5A2B2A73280016804A /* PlaylistHeaderViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -384,6 +390,7 @@
 				EED9D0922B1F639D0037AA48 /* NewReleaseCollectionViewCell.swift in Sources */,
 				EED9D0962B1F63F50037AA48 /* RecommendedTrackCollectionViewCell.swift in Sources */,
 				EE8405F92B23D90F008A4E33 /* FeaturedPlaylistCellViewModel.swift in Sources */,
+				EE0E4A592B2A6EBC0016804A /* PlaylistHeadeCollectionReusableView.swift in Sources */,
 				EEE4DFE72B17563E00946D22 /* SearchViewController.swift in Sources */,
 				EEE4E0022B17574A00946D22 /* Playlist.swift in Sources */,
 				EEE4DFFC2B17570E00946D22 /* AuthManager.swift in Sources */,
@@ -404,6 +411,7 @@
 				EEE4E00A2B17751E00946D22 /* Extension.swift in Sources */,
 				EE8405FF2B275DD2008A4E33 /* AlbumDetailsResponse.swift in Sources */,
 				EEE4DFEE2B17569400946D22 /* AuthViewController.swift in Sources */,
+				EE0E4A5B2B2A73280016804A /* PlaylistHeaderViewViewModel.swift in Sources */,
 				EEE4DFCB2B17533300946D22 /* AppDelegate.swift in Sources */,
 				EED9D0942B1F63CE0037AA48 /* FeaturedPlaylistCollectionViewCell.swift in Sources */,
 				EEE4DFE92B17565400946D22 /* LibraryViewController.swift in Sources */,
