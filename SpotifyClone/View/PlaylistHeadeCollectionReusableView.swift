@@ -1,0 +1,12 @@
+//
+//  PlaylistHeadeCollectionReusableView.swift
+//  SpotifyClone
+//
+//  Created by Rudolf Amiryan on 14.12.23.
+//
+
+import UIKit
+
+class PlaylistHeadeCollectionReusableView: UICollectionReusableView {
+        
+}
