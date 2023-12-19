@@ -202,6 +202,28 @@ final class APICaller {
         }
     }
     
+    //MARK: - Search
+    
+    public func search(with query: String, completion: @escaping (Result<[String], Error>) -> Void) {
+        createRequest(with: URL(string: Constants.baseAPIURL+"/search"), type: .GET) { request in
+            let task = URLSession.shared.dataTask(with: request) { data, _, error in
+                guard let data = data, error == nil else {
+                    completion(.failure(APIError.faileedToGetData))
+                    return
+                }
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
+                    print(json)
+                }
+                catch {
+                    print(error)
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
+    
     //MARK: - Private
     
     enum HTTPMethod: String {
