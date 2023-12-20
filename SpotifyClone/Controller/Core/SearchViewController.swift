@@ -7,8 +7,11 @@
 
 import UIKit
 
-class SearchViewController: UIViewController, UISearchResultsUpdating {
-  
+class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchBarDelegate {
+   
+    
+    
+    
     let searchController: UISearchController = {
         let vc = UISearchController(searchResultsController: SearchResultViewController())
         vc.searchBar.placeholder = "Songs, Artists, Albums"
@@ -39,9 +42,10 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.backgroundColor = .systemBackground
         searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
         navigationItem.searchController = searchController
         view.addSubview(collectionView)
         collectionView.register(CategoryCollectionViewCell.self,
@@ -68,46 +72,57 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
         collectionView.frame = view.bounds
     }
     
-    func updateSearchResults(for searchController: UISearchController) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let resultsController = searchController.searchResultsController as? SearchResultViewController,
-                let query = searchController.searchBar.text,
-                !query.trimmingCharacters(in: .whitespaces).isEmpty else {
+              let query = searchBar.text,
+              !query.trimmingCharacters(in: .whitespaces).isEmpty else {
             return
         }
-        // resultsController.update(with: results)
-        // Perform search
-        // APICaller.shared.search
-    }
-
-   
-
-}
-
-extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categories.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier,
-                                                            for: indexPath) as? CategoryCollectionViewCell else {
-            return UICollectionViewCell()
+        APICaller.shared.search(with: query) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let results):
+                    resultsController.update(with: results)
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
         }
-        let category = categories[indexPath.row]
-        cell.configure(with: CategoryCollectionViewCellViewModel(title: category.name,
-                                                                 artworkURL: URL(string: category.icons.first?.url ?? "")))
-        return cell
+        
+        
+    }
+    func updateSearchResults(for searchController: UISearchController) {
+        
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.deselectItem(at: indexPath, animated: true)
-        let category = categories[indexPath.row]
-        let vc = CategoryViewController(category: category)
-        vc.navigationItem.largeTitleDisplayMode = .never
-        navigationController?.pushViewController(vc, animated: true)
-    }
 }
+    
+    extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+        func numberOfSections(in collectionView: UICollectionView) -> Int {
+            return 1
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return categories.count
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier,
+                                                                for: indexPath) as? CategoryCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            let category = categories[indexPath.row]
+            cell.configure(with: CategoryCollectionViewCellViewModel(title: category.name,
+                                                                     artworkURL: URL(string: category.icons.first?.url ?? "")))
+            return cell
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            collectionView.deselectItem(at: indexPath, animated: true)
+            let category = categories[indexPath.row]
+            let vc = CategoryViewController(category: category)
+            vc.navigationItem.largeTitleDisplayMode = .never
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+
