@@ -78,6 +78,8 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
               !query.trimmingCharacters(in: .whitespaces).isEmpty else {
             return
         }
+        resultsController.delegate = self
+        
         APICaller.shared.search(with: query) { result in
             DispatchQueue.main.async {
                 switch result {
@@ -93,6 +95,26 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
     }
     func updateSearchResults(for searchController: UISearchController) {
         
+    }
+    
+}
+
+extension SearchViewController: SearchResultViewControllerDelegate {
+    func didTapResult(_ result: SearchResult) {
+        switch result {
+        case .artist(let model):
+            break
+        case .album(let model):
+            let vc = AlbumViewController(album: model)
+            vc.navigationItem.largeTitleDisplayMode = .never
+            navigationController?.pushViewController(vc, animated: true)
+        case .track(let model):
+            break
+        case .playlist(let model):
+            let vc = PlaylistViewController(playlist: model)
+            vc.navigationItem.largeTitleDisplayMode = .never
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }
