@@ -14,7 +14,7 @@ class LibraryPlaylistsViewController: UIViewController {
     private let noPlaylistsView = ActionLabelView()
     
     private let tableView: UITableView = {
-       let tableView = UITableView()
+        let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(SearchResultSubtitleTableViewCell.self,
                            forCellReuseIdentifier: SearchResultSubtitleTableViewCell.identifier)
         tableView.isHidden = true
@@ -35,6 +35,7 @@ class LibraryPlaylistsViewController: UIViewController {
         super.viewDidLayoutSubviews()
         noPlaylistsView.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
         noPlaylistsView.center = view.center
+        tableView.frame = view.bounds
     }
     
     private func setUpNoPlaylistsView() {
@@ -61,8 +62,12 @@ class LibraryPlaylistsViewController: UIViewController {
         if playlists.isEmpty {
             // Show Label
             noPlaylistsView.isHidden = false
+            tableView.isHidden = true
         } else {
             // Show table
+            tableView.reloadData()
+            noPlaylistsView.isHidden = true
+            tableView.isHidden = false
         }
     }
     
@@ -104,7 +109,20 @@ extension LibraryPlaylistsViewController: UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchResultSubtitleTableViewCell.identifier,
+                                                 for: indexPath) as? SearchResultSubtitleTableViewCell else {
+            return UITableViewCell()
+        }
+        let playlist = playlists[indexPath.row]
+        cell.configure(with: SearchResultSubtitleTableViewCellViewModel(title: playlist.name, 
+                                                                        subtitle: playlist.owner.display_name,
+                                                                        imageURL: URL(string:playlist.images.first?.url ?? "")))
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
     
     
