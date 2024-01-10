@@ -53,7 +53,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         models.append("Email Address: \(model.email)")
         models.append("User ID: \(model.id)")
         models.append("Plan: \(model.product)")
-        createTableHeader(with: model.image.first?.url)
+        createTableHeader(with: model.images.first?.url)
         tableView.reloadData()
     }
     
