@@ -70,6 +70,7 @@
 		EEE4E00A2B17751E00946D22 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E0092B17751E00946D22 /* Extension.swift */; };
 		EEE4E00C2B195B4000946D22 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E00B2B195B4000946D22 /* AuthResponse.swift */; };
 		EEE4E0102B19699100946D22 /* PrivateTokensForAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4E00F2B19699100946D22 /* PrivateTokensForAPI.swift */; };
+		EEEF68C72B5DDE3E000609BF /* LibraryAlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEF68C62B5DDE3E000609BF /* LibraryAlbumsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,7 @@
 		EEE4E0092B17751E00946D22 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		EEE4E00B2B195B4000946D22 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		EEE4E00F2B19699100946D22 /* PrivateTokensForAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateTokensForAPI.swift; sourceTree = "<group>"; };
+		EEEF68C62B5DDE3E000609BF /* LibraryAlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +288,7 @@
 				EE1D1D8C2B325DB100131C9C /* SearchResultResponse.swift */,
 				EE1D1D8E2B325F0900131C9C /* SearchResult.swift */,
 				EE77D2D32B4ECA8300110AFB /* LibraryPlaylistsResponse.swift */,
+				EEEF68C62B5DDE3E000609BF /* LibraryAlbumsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				EE1D1D852B2DD68200131C9C /* GenreCollectionViewCell.swift in Sources */,
 				EEE4E0002B17572D00946D22 /* HapticsManager.swift in Sources */,
 				EEE4E00A2B17751E00946D22 /* Extension.swift in Sources */,
+				EEEF68C72B5DDE3E000609BF /* LibraryAlbumsResponse.swift in Sources */,
 				EE7886FE2B34FB2000548B77 /* SearchResultsDefaultTableViewCell.swift in Sources */,
 				EE8405FF2B275DD2008A4E33 /* AlbumDetailsResponse.swift in Sources */,
 				EEE4DFEE2B17569400946D22 /* AuthViewController.swift in Sources */,

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct LibraryAlbumsResponse: Codable {
+    let items: [Album]
+}
