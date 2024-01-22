@@ -20,6 +20,8 @@ class LibraryAlbumsViewController: UIViewController {
         tableView.isHidden = true
         return tableView
     }()
+    
+    private var observer: NSObjectProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,12 @@ class LibraryAlbumsViewController: UIViewController {
         view.addSubview(tableView)
         setUpNoAlbumsView()
         fetchData()
-        
+        observer = NotificationCenter.default.addObserver(forName: .albumSavedNotification,
+                                                          object: nil,
+                                                          queue: .main,
+                                                          using: { [weak self] _ in
+            self?.fetchData()
+        })
     }
     
     @objc func didTapClose() {
@@ -51,6 +58,7 @@ class LibraryAlbumsViewController: UIViewController {
     }
     
     private func fetchData() {
+        albums.removeAll()
         APICaller.shared.getCurrentUserAlbums { [weak self] result in
             DispatchQueue.main.async {
                 switch result {

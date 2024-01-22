@@ -82,7 +82,9 @@ class AlbumViewController: UIViewController {
         actionSheet.addAction(UIAlertAction(title: "Save Album", style: .default, handler: { [weak self] _ in
             guard let strongSelf = self else { return }
             APICaller.shared.saveAlbum(album: strongSelf.album) { success in
-                print("Saved: \(success)")
+                if success {
+                    NotificationCenter.default.post(name: .albumSavedNotification, object: nil)
+                }
             }
         }))
         
